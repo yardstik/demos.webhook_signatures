@@ -1,0 +1,9 @@
+{
+  "name": "yardstik-webhooks-demo",
+  "dependencies": {
+    "express": "^4"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
