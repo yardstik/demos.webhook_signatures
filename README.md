@@ -20,7 +20,7 @@ To run this demo you will need:
 
 1. Go to Yardstik Developer > [API Keys](https://app.yardstik.com/developer/api-keys) and add a key with the name `WEBHOOK_SIGNATURE` (*Name must be exact*).
 
-    <img src="https://yardstik-assets.s3.us-east-1.amazonaws.com/images/demo/webhook_api_key.png" width="30%" height="30%" />
+    <img src="https://yardstik-assets.s3.us-east-1.amazonaws.com/images/demo/webhook_api_key.png" width="50%" height="50%" />
 
 2. Export your signature key to your environment
     ```bash
@@ -69,7 +69,7 @@ To run this demo you will need:
 
 7. Go to Yardstik Developer > [Webhooks](https://app.yardstik-staging.com/developer/webhooks) and create a new webhook for `account.updated` and enter your endpoint address
 
-    <img src="https://yardstik-assets.s3.us-east-1.amazonaws.com/images/demo/webhook_add.png" width="30%" height="30%" />
+    <img src="https://yardstik-assets.s3.us-east-1.amazonaws.com/images/demo/webhook_add.png" width="50%" height="50%" />
 
 8. Go to [Account Settings](https://app.yardstik-staging.com/settings/account) scroll all the way to the bottom and select **UPDATE CONTACT INFO**. 
     * *No changes required here, just click update and the same settings will be applied*
@@ -79,9 +79,9 @@ To run this demo you will need:
     * When the your hash is **different** from the `x-yardstik-webhook-signature` headers, your app **should not** process the payload.
     * If the `x-yardstik-webhook-signature` header and your calculated hash match, your app **should** process the webhook.
 
-    <img src="https://yardstik-assets.s3.us-east-1.amazonaws.com/images/demo/webhook_signing.ngrok.png" width="30%" height="30%" />
+    <img src="https://yardstik-assets.s3.us-east-1.amazonaws.com/images/demo/webhook_signing.ngrok.png" width="50%" height="50%" />
 
-    <img src="https://yardstik-assets.s3.us-east-1.amazonaws.com/images/demo/webhook_signing.demoapp.png" width="30%" height="30%" />
+    <img src="https://yardstik-assets.s3.us-east-1.amazonaws.com/images/demo/webhook_signing.demoapp.png" width="50%" height="50%" />
 
 9. Copy the payload recieved and attempt to send it directly without the signature
     ```bash
