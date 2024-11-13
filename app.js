@@ -28,7 +28,7 @@ app.post('/', (req, res) => {
     }
 
     // Your code here
-    console.log(BODY)
+    console.log(JSON.stringify(BODY, null, 2))
     console.log(`This is the x-yardstik-webhook-signature: ` + SIGNATURE);
     console.log(`This is your application's calculated hash: ` + HASH);
 
