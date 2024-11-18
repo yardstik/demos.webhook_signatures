@@ -18,21 +18,22 @@ To run this demo you will need:
 ## Setup
 **Time**: *15 minutes*
 
-1. Go to Yardstik Developer > [API Keys](https://app.yardstik.com/developer/api-keys) and add a key with the name `WEBHOOK_SIGNATURE` (*Name must be exact*).
-
+1. Go to Yardstik Developer > [API Keys](https://app.yardstik.com/developer/api-keys)
+2. Add a key with the name `WEBHOOK_SIGNATURE`
+    *  *Name must be exact, Yardstik will use this key to sign all future webhooks*
     <img src="https://yardstik-assets.s3.us-east-1.amazonaws.com/images/demo/webhook_api_key.png" width="50%" height="50%" />
 
-2. Export your signature key to your environment
+3. Export your signature key to your environment
     ```bash
     export WEBHOOK_SIGNATURE="***************************"
     ```
 
-3. Install Dependencies
+4. Install Dependencies
     ```bash
     npm install 
     ```
 
-4. Start app
+5. Start app
     ```bash
     npm start
 
@@ -40,7 +41,7 @@ To run this demo you will need:
     > node app.js
     ```
 
-5. Start ngrok to get your publicly accessible endpoint
+6. Start ngrok to get your publicly accessible endpoint
 * **Warning**: Consult your security team before installing any new tools and starting public tunnels.  You should understand the risks to exposing ports on your workstation.
     ```bash
     ngrok http 3000
